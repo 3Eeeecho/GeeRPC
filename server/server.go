@@ -80,7 +80,7 @@ func (server *Server) serveCodec(cc codec.Codec) {
 				break
 			}
 
-			req.h.Error = err
+			req.h.Error = err.Error()
 			server.sendResponse(cc, req.h, invalidRequest, sending)
 			continue
 		}

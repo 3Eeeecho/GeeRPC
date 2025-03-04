@@ -5,7 +5,7 @@ import "io"
 type Header struct {
 	ServiceMethod string
 	Seq           uint64
-	Error         error
+	Error         string
 }
 
 type Codec interface {

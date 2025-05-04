@@ -40,7 +40,7 @@ type Option struct {
 var DefaultOption = &Option{
 	MagicNumber:    MagicNumber,
 	CodecType:      codec.GobType,
-	ConnectTimeout: 10 * time.Second,
+	ConnectTimeout: 5 * time.Second,
 }
 
 type Server struct {
